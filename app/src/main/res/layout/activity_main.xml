@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?><!--xml layer starts here
+xml stands for extensible markup language
+it is a background code of layouts,widges etc-->
+<!--Linear layout is one of the types of layout
+It aligns views one by one that is by vertically/horizontally
+layout_width indicates the width of the Linear layout
+layout_Height indicates the height of the Linear layout
+context indicates the package name of the respective java class
+match parent will take complete height or width of text
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tharani.vibgyorscreen.MainActivity"
+    android:orientation="vertical">
+
+    <!--TextView is one of component of palette to display anything on layout
+    width indicates the width of the TextView
+    fill_parent fill the enter width
+    Height indicates the height of the TextView
+    what ever we write in text it displays in output
+    TextSize indicates the size of the text in sp units
+    TextColor indicates the color of text
+    string variables used to store the letters,numbers,symbols linked up with this program
+    it extracts string resource name and value in string.xml file
+    gravity indicates the direction of text-->
+    <!--here i have taken 7 textviews with different colors by using fill parent based on vibgyor-->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="74dp"
+        android:text="@string/red"
+        android:textSize="20sp"
+        android:background="#FF0000"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="74dp"
+        android:background="#FF7F00"
+        android:gravity="center"
+        android:text="@string/orange"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="74dp"
+        android:text="@string/yellow"
+        android:textSize="20sp"
+        android:background="#FFFF00"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="74dp"
+        android:text="@string/green"
+        android:textSize="20sp"
+        android:background="#00FF00"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="74dp"
+        android:text="@string/blue"
+        android:textSize="20sp"
+        android:background="#2321b3"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="74dp"
+        android:text="@string/indigo"
+        android:textSize="20sp"
+        android:background="#4a0d78"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="74dp"
+        android:text="@string/violet"
+        android:textSize="20sp"
+        android:background="#d215d6"
+        android:gravity="center"/>
+
+</LinearLayout><!--linear layout ends here-->
